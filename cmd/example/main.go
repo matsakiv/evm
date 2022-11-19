@@ -25,6 +25,13 @@ func main() {
         fmt.Println(sel)
     }
 
+    fmt.Println("-")
+    fmt.Println(utils.GetSelector("add(bytes32)"))                              // 446bffba
+    fmt.Println(utils.GetSelector("initiate(bytes32,address,uint256,uint256)")) // 48e558da
+    fmt.Println(utils.GetSelector("refund(bytes32)"))                           // 7249fbb6
+    fmt.Println(utils.GetSelector("redeem(bytes32,bytes32)"))                   // b31597ad
+    fmt.Println(utils.GetSelector("swaps(bytes32)"))                            // eb84e7f2
+
     // var instrs, err = utils.FindPattern(
     //     reader,
     //     []utils.Pattern{
